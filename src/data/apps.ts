@@ -34,6 +34,7 @@ export const APPS: AppItem[] = [
     intro:
       'Welkom in Stijn OS: een klein besturingssysteem dat ik zelf heb gebouwd als vorm én bewijs van mijn lerend vermogen, voor het Criteriumgericht Interview van de Ad Smart Media Production.',
     detail: [
+      'Mijn leren speelt zich af in mijn ondernemerschap: als Head of Technology bij Kaires (AI-muziek voor retail) én in Back to Being, waar ik met een team een AI-app voor mentale gezondheid bouw voor Stichting MIND.',
       'Elk programma op dit bureaublad opent een onderdeel van mijn leren: hóe ik leer, kritische reflectie op wie ik ben, mijn ontwikkelplan, de ethiek van AI-muziek, mijn rol als mediaprofessional en mijn volgende leerdoelen.',
       'Rechtsboven zie je de vier deelaspecten van Lerend Vermogen die het CGI beoordeelt: kritische reflectie en inzicht in mijn leerproces (LV 1.3), en ethische impact en ethisch handelen als mediaprofessional (LV 4.3). Elk venster laat zien welk aspect het afdekt.',
       'Het feit dat deze site bestaat, is zelf ook bewijs van lerend vermogen. Ik heb hem zelf gebouwd — door te doen, te testen en te reflecteren op wat wel en niet werkte.',
@@ -71,30 +72,31 @@ export const APPS: AppItem[] = [
   },
 
   // --------------------------------------------------------------------------
-  // ⚠️ TODO Stijn: dit is een doordachte concept-tekst. Vul de échte inhoud van
-  //    Back to Being aan: wat het precies was, wanneer/hoe je het deed, en vooral
-  //    wat het je leerde over je eigen leerproces en jezelf.
+  // Let op: enkele partners zijn nog in gesprek (Wispr Flow, Google) — voorzichtig
+  // formuleren en checken vóór publicatie van de openbare site.
   {
     id: 'being',
     fileName: 'BackToBeing.app',
-    title: 'Back to Being — terug naar de essentie',
-    teaser: 'De motor achter mijn reflectie',
+    title: 'Back to Being — kantoor in een rugzak',
+    teaser: 'Leren door te bouwen, op de Camino',
     icon: 'being',
-    criteria: ['reflectie', 'leerproces'],
+    criteria: ['reflectie', 'leerproces', 'ethiek'],
     intro:
-      'Back to Being was dit blok de grootste versneller van mijn lerend vermogen. Het dwong me om uit de constante modus van bouwen en doen te stappen en stil te staan bij wie ik ben en hóe ik wil leren.',
+      'Back to Being (backtobeing.tech) is de venture die ik met z’n drieën bouw: een AI-gestuurde app voor mentale gezondheid voor Stichting MIND. We zijn er volop mee bezig, en dit traject is voor mij een enorme versneller van mijn lerend vermogen.',
     detail: [
-      'Waar ik normaal van actie naar actie ga, gaf Back to Being mij ruimte om te vertragen: terug naar de essentie, terug naar het waaróm achter mijn keuzes.',
-      'Die rust en dat bewustzijn bleken geen tegenpool van presteren, maar juist de basis ervan. Ik merk dat ik betere en bewustere keuzes maak als ik eerst reflecteer in plaats van direct reageer.',
+      'Het probleem dat we aanpakken: jongeren ervaren veel prestatiedruk, faalangst en FOMO. Mind Young had daar een e-maillijst voor — vijf weken lang wekelijks opdrachten om even uit je hoofd te stappen en in het moment te komen — maar dat resoneert nauwelijks bij jongeren; ze schrijven zich er simpelweg niet voor in.',
+      'Onze oplossing is een AI-gestuurde app die diezelfde opdrachten interactief maakt: quotes, opdrachten die je op het platform uitvoert en boeksuggesties. Dat sluit veel beter aan bij de doelgroep dan een e-mailblast.',
+      'De manier waaróp we het bouwen is zelf een leerexperiment. Van 24 tot en met 31 augustus 2026 lopen we met z’n drieën de Camino: we vliegen naar Porto, reizen door naar Tui en lopen vandaar zo’n 120 km naar Santiago de Compostela — terwijl we onderweg de app bouwen. Ons kantoor zit dan letterlijk in onze rugzak: laptops mee, smartglasses om onze schermen te zien, Starlink voor bereik en AI-agents die we via onze AirPods aanspreken. Techleap is aangehaakt, remote is onze hoofdsponsor, we zijn in gesprek met Wispr Flow en proberen ook Google te betrekken. Binnenkort verschijnt er een interview over de actie in Quote.',
     ],
     reflectie: [
-      'Back to Being veranderde de manier waarop ik leer: van vooral reageren en doorbouwen, naar bewust kiezen en achteraf reflecteren. Het maakte mijn reflectie minder een verplicht formulier en meer een houding.',
-      'Het hielp me ook om mijn valkuil te zien: ik vlucht soms in doen en bouwen. Door bewust te vertragen kan ik kritischer naar mijn eigen ontwikkeling kijken — precies wat LV 1.3 vraagt.',
+      'Back to Being verandert nu al hóe ik leer. Ik merk dat ik het snelst leer in het diepe: door met een team echt te bouwen onder ongemakkelijke omstandigheden, in plaats van eerst alles veilig uit te denken. Straks op de Camino — lopend, met beperkte tijd en bereik — zal ik keuzes moeten maken en vertrouwen op reflectie-onderweg in plaats van op zekerheid vooraf.',
+      'Tegelijk zit hier een ethische spanning die me scherp houdt: we zetten maximale slimme technologie in (smartglasses, Starlink, AI-agents) om juist een app te bouwen die jongeren helpt om uit hun hoofd te komen en even mínder met techniek bezig te zijn. Dat dwingt me na te denken over de ethische impact van AI op kwetsbare jongeren — hoe voorkom je dat een tool die rust belooft zelf weer een bron van druk of afhankelijkheid wordt?',
+      'Juist die paradox — terug naar “being” met de nieuwste technologie in de hand — maakt Back to Being zo waardevol voor mijn lerend vermogen: het combineert leren door te doen met kritisch nadenken over wat die technologie met mensen doet.',
     ],
-    quote: 'Eerst zijn, dan doen. Mijn beste keuzes komen uit rust, niet uit reflex.',
-    bewijs: [],
+    quote: 'We gebruikten alle techniek die er is, om jongeren te helpen er juist even zónder te kunnen.',
+    bewijs: [{ label: 'Back to Being (backtobeing.tech)', href: 'https://backtobeing.tech' }],
     vervolgstap:
-      'Reflectie en bewust vertragen vasthouden als vaste gewoonte, ook als het druk wordt en bouwen verleidelijker is.',
+      'De ethische lat hooghouden: een AI die mentale rust belooft, mag voor kwetsbare jongeren nooit nieuwe druk of afhankelijkheid creëren.',
   },
 
   // --------------------------------------------------------------------------
