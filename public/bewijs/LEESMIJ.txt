@@ -1,0 +1,25 @@
+BEWIJS / SCREENSHOTS / DOCUMENTEN
+=================================
+
+Zet hier je bestanden neer (foto's, screenshots, PDF's) en koppel ze in
+src/data/apps.ts bij het juiste onderwerp (het veld `bewijs`).
+
+FOTO / SCREENSHOT (toont een polaroid, klikbaar om te vergroten):
+  bewijs: [{ label: 'RAAIT-keynote', image: '/bewijs/raait-keynote.jpeg' }]
+
+DOCUMENT / LINK (toont een klikbare kaart, opent in nieuw tabblad):
+  bewijs: [{ label: 'Adviesrapport ethiek', href: '/bewijs/adviesrapport.pdf' }]
+  bewijs: [{ label: 'Kaires-website', href: 'https://kaires.nl/' }]   (externe link mag ook)
+
+Het base-path (/stijn-os-smp/) wordt automatisch toegevoegd; gebruik dus gewoon
+'/bewijs/...'. Een item zonder image en zonder href verschijnt als lege polaroid.
+
+Suggesties die nog kunnen worden toegevoegd (nu nog lege bewijs-slots):
+  - RAAIT-keynote foto            -> Mediaprofessional.app / Spiegel.sys
+  - Bouwlog-screenshot            -> Bouwlog.exe
+  - Adviesrapport / deskresearch  -> Ethiek.exe
+  - Video eindevaluatie (link)    -> Mediaprofessional.app
+  - POP (geredigeerd, zonder studentnummer) -> POP.doc
+
+Let op: publiceer geen documenten met persoonsgegevens (zoals je studentnummer)
+op de openbare GitHub Pages-site. Dek gevoelige gegevens af of houd ze lokaal.

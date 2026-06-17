@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #1a1812;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: theme('colors.ink.DEFAULT');
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden; /* desktop-shell beheert zelf het scrollen */
+}
+
+/* Op kleine schermen mag de pagina gewoon scrollen */
+@media (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+}
+
+@layer components {
+  /* Pixel-randen: harde, klassieke vensterrand zonder anti-aliasing-gevoel */
+  .pixel-border {
+    @apply border-2 border-ink/80;
+  }
+
+  /* Klassieke "knop"-look met bevel */
+  .retro-btn {
+    @apply bg-bezel text-ink font-pixel text-[10px] px-3 py-1 border-2 border-ink/70 shadow-bevel
+      active:shadow-bevel-in select-none cursor-pointer transition-shadow;
+  }
+
+  .retro-chip {
+    @apply inline-flex items-center gap-1 font-pixel text-[10px] uppercase tracking-tight
+      px-2 py-1 border border-ink/40 bg-paper-dark text-ink/80;
+  }
+}
+
+@layer utilities {
+  /* Subtiele CRT-scanlines over het bureaublad */
+  .crt-scanlines::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.12) 0px,
+      rgba(0, 0, 0, 0.12) 1px,
+      transparent 2px,
+      transparent 3px
+    );
+    mix-blend-mode: multiply;
+    z-index: 50;
+  }
+
+  /* Zachte vignet/curve van een echt CRT-scherm */
+  .crt-vignette::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(120% 120% at 50% 50%, transparent 60%, rgba(0, 0, 0, 0.35) 100%);
+    z-index: 49;
+  }
+
+  .text-shadow-pixel {
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.35);
+  }
+
+  /* Verberg scrollbar maar houd scroll-functionaliteit */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .dotted-bg {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 16px 16px;
+  }
+
+  .clippy-bob {
+    animation: clippy-bob 3.5s ease-in-out infinite;
+  }
+  @keyframes clippy-bob {
+    0%,
+    100% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-4px) rotate(-2deg);
+    }
+  }
+}
+
+/* Nette scrollbar binnen vensters */
+.window-scroll::-webkit-scrollbar {
+  width: 12px;
+}
+.window-scroll::-webkit-scrollbar-track {
+  background: theme('colors.paper.dark');
+}
+.window-scroll::-webkit-scrollbar-thumb {
+  background: theme('colors.bezel.dark');
+  border: 2px solid theme('colors.paper.dark');
+}
