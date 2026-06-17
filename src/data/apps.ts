@@ -57,7 +57,8 @@ export const APPS: AppItem[] = [
     intro:
       'Als Head of Technology bouwde ik bij Kaires de eerste tech-stack: de weighted matrix, een begin van het Nederlandse muziekgeneratiemodel en het platform. Mijn belangrijkste inzicht over leren: ik leer door te doen, en daarna te reflecteren op wat ik deed.',
     detail: [
-      'In dit afstudeerblok zie ik scherp waar mijn leerpunt zit: ik werk nog te veel op het niveau van bestaande tools aan elkaar knopen. Ik wil een laag dieper — zelf modellen finetunen, de matrix onderbouwd opbouwen in plaats van op gevoel, en mijn technische keuzes kunnen beargumenteren.',
+      'Mijn technische leerproces begon zonder formele basis. Binnen mijn opleiding kreeg ik nauwelijks software engineering, dus ik zocht het grotendeels zelf uit: websites bouwen, applicaties opzetten, automatiseringen maken en systemen aan elkaar koppelen. Vrijwel alles deed ik toen voor het eerst op dit niveau — en juist dat zelf-uitzoeken leerde mij hoe ik leer.',
+      'Inmiddels zie ik scherp waar mijn volgende leerpunt zit: ik werk nog te veel op het niveau van bestaande tools aan elkaar knopen. Ik wil een laag dieper — zelf modellen finetunen, de matrix onderbouwd opbouwen in plaats van op gevoel, en mijn technische keuzes kunnen beargumenteren.',
       'Daarom maak ik mijn leerproces expliciet: wekelijkse vaste blokken voor modelwerk (uit mijn urenbegroting), een bouwlog met korte reflectie (wat werkt, wat niet) en peer review op mijn technische keuzes door mijn mediaprofessional.',
       'Mijn sterke punten daarbij zijn snel schakelen, verbanden leggen en ondernemend zijn. Mijn verbeterpunt is precies de kern van dit doel: écht onder de motorkap begrijpen wat ik bouw — niet alleen dát het werkt.',
     ],
@@ -103,25 +104,25 @@ export const APPS: AppItem[] = [
   {
     id: 'spiegel',
     fileName: 'Spiegel.sys',
-    title: 'Waarnemer & vredestichter',
-    teaser: 'Kritische reflectie op wie ik ben',
+    title: 'Verbinden én richting geven',
+    teaser: 'Kritische reflectie op mijn gedrag',
     icon: 'spiegel',
     criteria: ['reflectie'],
     intro:
-      'Uit mijn Enneagramtest kwam naar voren dat ik een waarnemer en vredestichter ben. Mijn kracht is dat ik goed kan luisteren, verbanden zie, rust bewaar en mensen verbind.',
+      'Een rode draad in mijn leerproces is hoe ik mij tot anderen verhoud. Mijn kracht is dat ik goed kan luisteren, verbanden zie, rust bewaar en mensen verbind. Mijn valkuil is dat ik in klantcontacten te snel meega en mijn eigen visie laat liggen.',
     detail: [
-      'Mijn valkuil ken ik inmiddels goed: in klantcontacten ga ik te snel mee en laat ik mijn eigen visie liggen. Aardig en meedenkend zijn is voor mij makkelijker dan stelling nemen.',
-      'Voor dit blok maakte ik dat concreet. In plaats van een vaag "assertiever worden"-doel uit de minor koos ik twee echte momenten: de keynote op het RAAIT-event (samen met Max, voor 300 retailers in de zaal) en bewust netwerken op datzelfde event — niet afwachten, maar mensen benaderen met een doel vooraf.',
-      'Na afloop reflecteer ik telkens op hetzelfde: waar heb ik meegegeven, en waar heb ik stelling genomen?',
+      'Door mijn werk aan Kaires leerde ik dat verbinden alleen niet genoeg is. Ondernemen vraagt ook richting geven: als Head of Technology moest ik technische keuzes maken én verantwoorden, en in de keynote moest ik staan voor het verhaal in plaats van mee te bewegen. Aardig en meedenkend zijn is voor mij makkelijker dan stelling nemen — dat is precies waar mijn groei zit.',
+      'Voor dit blok maakte ik die groei concreet. In plaats van een vaag "assertiever worden"-doel koos ik twee echte momenten: de keynote op het RAAIT-event (samen met Max, voor 300 retailers in de zaal) en bewust netwerken op datzelfde event — niet afwachten, maar mensen benaderen met een doel vooraf.',
+      'Na afloop reflecteer ik telkens op hetzelfde: waar heb ik meegegeven, en waar heb ik richting gegeven?',
     ],
     reflectie: [
-      'Mijn groei zit niet in minder verbindend worden, maar in verbinding combineren met stevigheid. Kritisch reflecteren betekent voor mij ook durven zien waar mijn kracht (meebewegen) omslaat in een valkuil.',
+      'Mijn groei zit niet in minder verbindend worden, maar in verbinding combineren met stevigheid. Kritisch reflecteren betekent voor mij ook durven zien waar mijn kracht — meebewegen — omslaat in een valkuil.',
       'De tweewekelijkse check-ins met mijn coach en met Max gaan daarom bewust over gedrag, niet alleen over output. Dat is mijn spiegel.',
     ],
-    quote: 'Verbinden is mijn kracht. Stelling nemen is mijn groei.',
+    quote: 'Verbinden is mijn kracht. Richting geven is mijn groei.',
     bewijs: [],
     vervolgstap:
-      'Bij elke pitch en netwerksituatie bewust stelling nemen en achteraf reflecteren op mijn gedrag, niet alleen op het resultaat.',
+      'Bij elke pitch en netwerksituatie bewust richting geven en achteraf reflecteren op mijn gedrag, niet alleen op het resultaat.',
   },
 
   // --------------------------------------------------------------------------
