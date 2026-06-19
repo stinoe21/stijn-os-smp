@@ -36,6 +36,7 @@ export type IconKey =
   | 'being' // Back to Being
   | 'pop' // Persoonlijk ontwikkelplan
   | 'ethiek' // Weegschaal / ethische afweging
+  | 'video' // Filmklapper / eindevaluatie-opname
 
 /** Eén bewijsstuk: een foto (polaroid) of een link naar een document (PDF). */
 export interface BewijsItem {
@@ -77,6 +78,13 @@ export interface AppItem {
   reflectie: string[]
   /** Optionele markante quote. */
   quote?: string
+  /**
+   * Optionele video die ín het venster afspeelt (bv. de eindevaluatie-opname).
+   * - Lokaal bestand: zet 'm in public/bewijs/ en gebruik '/bewijs/gesprek.mp4'.
+   * - Of een embed-URL (YouTube/Vimeo/Google Drive '/preview') -> komt in een iframe.
+   * Laat `src` leeg ('') om een nette "video volgt"-placeholder te tonen.
+   */
+  video?: { src?: string; poster?: string; label?: string }
   /** Bewijs/voorbeelden. */
   bewijs: BewijsItem[]
   /** Nieuwe leerdoel / volgende stap. */

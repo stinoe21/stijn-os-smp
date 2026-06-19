@@ -52,6 +52,9 @@ export default function Clippy({ onOpenReadme }: { onOpenReadme: () => void }) {
 
   return (
     <div className="pointer-events-auto flex items-end gap-1">
+      <button onClick={handleClick} title="Clippy" aria-label="Clippy-assistent" className="clippy-bob shrink-0">
+        <ClippySvg />
+      </button>
       {open && (
         <div className="relative mb-1 w-[230px] border-2 border-ink bg-[#fff7cc] p-2.5 shadow-window">
           <div className="mb-1 flex items-center justify-between">
@@ -79,13 +82,10 @@ export default function Clippy({ onOpenReadme }: { onOpenReadme: () => void }) {
               volgende tip →
             </button>
           </div>
-          {/* tipballon-puntje (wijst naar Clippy, rechts) */}
-          <div className="absolute -right-[7px] bottom-5 h-3 w-3 rotate-45 border-r-2 border-t-2 border-ink bg-[#fff7cc]" />
+          {/* tipballon-puntje (wijst naar Clippy, links) */}
+          <div className="absolute -left-[7px] bottom-5 h-3 w-3 rotate-45 border-b-2 border-l-2 border-ink bg-[#fff7cc]" />
         </div>
       )}
-      <button onClick={handleClick} title="Clippy" aria-label="Clippy-assistent" className="clippy-bob shrink-0">
-        <ClippySvg />
-      </button>
     </div>
   )
 }

@@ -2,15 +2,25 @@ import { useEffect, useState } from 'react'
 import BootScreen from './components/BootScreen'
 import Desktop from './components/Desktop'
 import MenuBar from './components/MenuBar'
+import PresentationBar from './components/PresentationBar'
 import StatusBar from './components/StatusBar'
 import { useIsDesktop } from './hooks/useMediaQuery'
+import { usePresentation } from './hooks/usePresentation'
 import { useWindows } from './hooks/useWindows'
 
 export default function App() {
   const [booted, setBooted] = useState(false)
   const [scanlines, setScanlines] = useState(true)
+  const [visual, setVisual] = useState(false) // presentatiemodus: minder tekst, meer beeld
   const wm = useWindows()
+  const presentation = usePresentation(wm.openOnly, wm.closeAll)
   const isDesktop = useIsDesktop()
+
+  // De rondleiding starten zet meteen de visuele presentatiemodus aan.
+  const startPresentation = () => {
+    setVisual(true)
+    presentation.start()
+  }
 
   // Open automatisch LEESMIJ.txt zodra het bureaublad is geladen.
   useEffect(() => {
@@ -37,9 +47,18 @@ export default function App() {
             seen={wm.seenCriteria}
             scanlines={scanlines}
             onToggleScanlines={() => setScanlines((s) => !s)}
+            onStartPresentation={startPresentation}
+            presenting={presentation.active}
+            visual={visual}
+            onToggleVisual={() => setVisual((v) => !v)}
           />
-          <Desktop wm={wm} isDesktop={isDesktop} />
-          <StatusBar openCount={wm.windows.length} />
+          <Desktop wm={wm} isDesktop={isDesktop} compact={visual} />
+          <PresentationBar p={presentation} />
+          <StatusBar
+            openCount={wm.windows.length}
+            seenCount={wm.openedEver.size}
+            total={presentation.total}
+          />
         </div>
       </div>
     </div>

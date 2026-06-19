@@ -16,6 +16,7 @@ const TILE: Record<IconKey, string> = {
   being: '#4f8a6b',
   pop: '#b5832e',
   ethiek: '#5b5a7a',
+  video: '#8f3b4d',
 }
 
 const INK = '#1b1710'
@@ -158,6 +159,23 @@ function Glyph({ icon }: { icon: IconKey }) {
           <path d="M4 15 h8 l-1.5 4 h-5 z" fill="#d9cfb6" stroke={INK} strokeWidth="0.75" />
           <line x1="24" y1="11" x2="24" y2="15" stroke={PAPER} strokeWidth="1.5" />
           <path d="M20 15 h8 l-1.5 4 h-5 z" fill="#d9cfb6" stroke={INK} strokeWidth="0.75" />
+        </>
+      )
+    case 'video':
+      // Filmklapper met play-driehoek = video-opname
+      return (
+        <>
+          {/* board */}
+          <rect x="5" y="11" width="22" height="15" fill="#26242f" stroke={INK} strokeWidth="1" />
+          {/* clap stick */}
+          <rect x="5" y="6" width="22" height="5" fill={PAPER} stroke={INK} strokeWidth="1" />
+          {/* diagonale strepen op de klapper */}
+          <polygon points="8,6 10.5,6 8.5,11 6,11" fill={INK} />
+          <polygon points="13,6 15.5,6 13.5,11 11,11" fill={INK} />
+          <polygon points="18,6 20.5,6 18.5,11 16,11" fill={INK} />
+          <polygon points="23,6 25.5,6 23.5,11 21,11" fill={INK} />
+          {/* play-driehoek */}
+          <polygon points="14,15 14,23 22,19" fill="#f6b13c" stroke={INK} strokeWidth="0.5" strokeLinejoin="round" />
         </>
       )
   }

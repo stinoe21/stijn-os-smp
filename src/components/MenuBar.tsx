@@ -21,10 +21,18 @@ export default function MenuBar({
   seen,
   scanlines,
   onToggleScanlines,
+  onStartPresentation,
+  presenting,
+  visual,
+  onToggleVisual,
 }: {
   seen: Set<CriterionId>
   scanlines: boolean
   onToggleScanlines: () => void
+  onStartPresentation: () => void
+  presenting: boolean
+  visual: boolean
+  onToggleVisual: () => void
 }) {
   return (
     <div className="z-40 flex items-center justify-between gap-2 border-b-2 border-black/40 bg-gradient-to-b from-bezel-light to-bezel-dark px-2 py-1 text-ink shadow-[0_1px_0_rgba(255,255,255,0.4)_inset]">
@@ -34,12 +42,29 @@ export default function MenuBar({
         </span>
         <span className="font-pixel text-[11px] tracking-tight">Stijn OS</span>
         <span className="hidden font-pixel text-[9px] text-ink/50 md:inline">· persoonlijke ontwikkeling</span>
+        <button
+          onClick={onStartPresentation}
+          className="ml-1 flex items-center gap-1 border-2 border-ink bg-accent px-2 py-0.5 font-pixel text-[9px] uppercase tracking-tight text-paper shadow-bevel active:shadow-bevel-in"
+          title="Start de rondleiding: stap voor stap door alle vensters"
+        >
+          ▶ {presenting ? 'Opnieuw' : 'Rondleiding'}
+        </button>
+        <button
+          onClick={onToggleVisual}
+          className={[
+            'flex items-center gap-1 border-2 border-ink px-2 py-0.5 font-pixel text-[9px] uppercase tracking-tight shadow-bevel active:shadow-bevel-in',
+            visual ? 'bg-retroblue text-paper' : 'bg-bezel text-ink/70',
+          ].join(' ')}
+          title="Presentatiemodus: minder tekst, meer beeld"
+        >
+          ▣ Visueel: {visual ? 'aan' : 'uit'}
+        </button>
       </div>
 
       <div className="flex items-center gap-3">
         <button
           onClick={onToggleScanlines}
-          className="font-pixel text-[8px] uppercase text-ink/60 hover:text-ink"
+          className="hidden font-pixel text-[8px] uppercase text-ink/60 hover:text-ink sm:inline"
           title="CRT-effect aan/uit (voor betere leesbaarheid)"
         >
           CRT: {scanlines ? 'aan' : 'uit'}

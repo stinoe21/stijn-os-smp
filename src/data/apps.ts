@@ -58,6 +58,8 @@ export const APPS: AppItem[] = [
       'Als Head of Technology bouwde ik bij Kaires de eerste tech-stack: de weighted matrix, een begin van het Nederlandse muziekgeneratiemodel en het platform. Mijn belangrijkste inzicht over leren: ik leer door te doen, en daarna te reflecteren op wat ik deed.',
     detail: [
       'Mijn technische leerproces begon zonder formele basis. Binnen mijn opleiding kreeg ik nauwelijks software engineering, dus ik zocht het grotendeels zelf uit: websites bouwen, applicaties opzetten, automatiseringen maken en systemen aan elkaar koppelen. Vrijwel alles deed ik toen voor het eerst op dit niveau — en juist dat zelf-uitzoeken leerde mij hoe ik leer.',
+      'Het zichtbaarste bewijs van "leren door te doen" is mijn webdesign — en vooral hóe snel ik een site inmiddels live krijg. Mijn baseline begon met een eerste "vibecode"-website (zie de video hieronder), maar ik had geen idee hoe ik die online kreeg. Daarom bouwde ik smartmediaproduction.nl noodgedwongen in Squarespace — iets wat ik nooit meer doe.',
+      'Daarna ging het hard. Kaires.nl kostte nog vier weken voordat het live stond; backtobeing.tech had ik binnen één week online. Die versnelling — van "geen idee hoe ik iets live krijg" naar "binnen een week zelf online" — ís mijn leerproces in webdesign. Diezelfde groei zie je terug in dit OS, dat ik ook helemaal zelf heb gebouwd.',
       'Inmiddels zie ik scherp waar mijn volgende leerpunt zit: ik werk nog te veel op het niveau van bestaande tools aan elkaar knopen. Ik wil een laag dieper — zelf modellen finetunen, de matrix onderbouwd opbouwen in plaats van op gevoel, en mijn technische keuzes kunnen beargumenteren.',
       'Daarom maak ik mijn leerproces expliciet: wekelijkse vaste blokken voor modelwerk (uit mijn urenbegroting), een bouwlog met korte reflectie (wat werkt, wat niet) en peer review op mijn technische keuzes door mijn mediaprofessional.',
       'Mijn sterke punten daarbij zijn snel schakelen, verbanden leggen en ondernemend zijn. Mijn verbeterpunt is precies de kern van dit doel: écht onder de motorkap begrijpen wat ik bouw — niet alleen dát het werkt.',
@@ -67,7 +69,15 @@ export const APPS: AppItem[] = [
       'Door een bouwlog bij te houden zie ik mijn eigen patronen: waar ik vooruitspring en waar ik het waaróm oversla. Dat inzicht in hoe ik leer is precies wat LV 1.3 van mij vraagt.',
     ],
     quote: 'Ik wil niet alleen dat het werkt — ik wil kunnen uitleggen waaróm.',
-    bewijs: [],
+    video: {
+      src: '/bewijs/vibecode-iteratie-blok6.mp4',
+      label: 'Mijn eerste vibecode-website (iteratie blok 6) — het beginpunt van mijn groei in een half jaar',
+    },
+    bewijs: [
+      { label: 'Baseline (half jaar geleden, Squarespace): smartmediaproduction.nl', href: 'https://www.smartmediaproduction.nl' },
+      { label: 'Na ~4 weken live — Kaires: kaires.nl', href: 'https://kaires.nl' },
+      { label: 'Binnen 1 week live — Back to Being: backtobeing.tech', href: 'https://backtobeing.tech' },
+    ],
     vervolgstap:
       'Mijn technische keuzes structureel onderbouwen en in mijn bouwlog blijven reflecteren, zodat mijn leren zichtbaar wordt.',
   },
@@ -87,7 +97,7 @@ export const APPS: AppItem[] = [
     detail: [
       'Het probleem dat we aanpakken: jongeren ervaren veel prestatiedruk, faalangst en FOMO. Mind Young had daar een e-maillijst voor — vijf weken lang wekelijks opdrachten om even uit je hoofd te stappen en in het moment te komen — maar dat resoneert nauwelijks bij jongeren; ze schrijven zich er simpelweg niet voor in.',
       'Onze oplossing is een AI-gestuurde app die diezelfde opdrachten interactief maakt: quotes, opdrachten die je op het platform uitvoert en boeksuggesties. Dat sluit veel beter aan bij de doelgroep dan een e-mailblast.',
-      'De manier waaróp we het bouwen is zelf een leerexperiment. Van 24 tot en met 31 augustus 2026 lopen we met z’n drieën de Camino: we vliegen naar Porto, reizen door naar Tui en lopen vandaar zo’n 120 km naar Santiago de Compostela — terwijl we onderweg de app bouwen. Ons kantoor zit dan letterlijk in onze rugzak: laptops mee, smartglasses om onze schermen te zien, Starlink voor bereik en AI-agents die we via onze AirPods aanspreken. Techleap is aangehaakt, remote is onze hoofdsponsor, we zijn in gesprek met Wispr Flow en proberen ook Google te betrekken. Binnenkort verschijnt er een interview over de actie in Quote.',
+      'De manier waaróp we het bouwen is zelf een leerexperiment. Van 24 tot en met 31 augustus 2026 lopen we met z’n drieën de Camino: we vliegen naar Porto, reizen door naar Tui en lopen vandaar zo’n 120 km naar Santiago de Compostela — terwijl we onderweg de app bouwen. Ons kantoor zit dan letterlijk in onze rugzak: laptops mee, smartglasses om onze schermen te zien, Starlink voor bereik en AI-agents die we via onze AirPods aanspreken. Techleap is aangehaakt, remote is onze nieuwe sponsor, we zijn in gesprek met Wispr Flow en proberen ook Google te betrekken. Binnenkort verschijnt er een interview over de actie in Quote.',
     ],
     reflectie: [
       'Back to Being verandert nu al hóe ik leer. Ik merk dat ik het snelst leer in het diepe: door met een team echt te bouwen onder ongemakkelijke omstandigheden, in plaats van eerst alles veilig uit te denken. Straks op de Camino — lopend, met beperkte tijd en bereik — zal ik keuzes moeten maken en vertrouwen op reflectie-onderweg in plaats van op zekerheid vooraf.',
@@ -145,7 +155,7 @@ export const APPS: AppItem[] = [
       'Mijn POP is mijn stuurinstrument. Ik merk dat ik zonder plan afdrijf naar wat ik leuk vind (bouwen). Door doelen, acties én planning te benoemen maak ik mijn leren stuurbaar en meetbaar — bijvoorbeeld met een baseline aan data vóór de uitrol.',
       'Reflecteren op het plan zelf is ook leerzaam: mijn doelen verschoven bewust van de minor (salescalls) naar twee scherpe momenten op RAAIT. Die verschuiving is op zichzelf bewijs dat ik mijn leerproces stuur.',
     ],
-    bewijs: [],
+    bewijs: [{ label: 'Mijn volledige POP (Blok 8) — document', href: '/bewijs/POP-Blok8-Stijn-Smit.docx' }],
     vervolgstap:
       'Mijn POP gebruiken als levend document: doelen toetsen aan de pilotdata en bijstellen waar de praktijk daarom vraagt.',
   },
@@ -201,26 +211,37 @@ export const APPS: AppItem[] = [
   },
 
   // --------------------------------------------------------------------------
+  // De video-opname van het eindevaluatiegesprek (onderdeel van het CGI).
+  //  Opname toevoegen?
+  //   - Lokaal bestand: zet 'm in /public/bewijs/ (bv. eindgesprek.mp4)
+  //       en zet hieronder  video.src: '/bewijs/eindgesprek.mp4'
+  //   - Of een embed-link (YouTube/Vimeo, of Google Drive met '/preview')
+  //       -> plak de URL gewoon in video.src.
   {
-    id: 'portfolio',
-    fileName: 'Portfolio.dir',
-    title: 'Portfolio & randvoorwaarden',
-    teaser: 'Mijn bewijslast voor het CGI',
-    icon: 'boekhouding',
-    criteria: ['leerproces'],
+    id: 'evaluatie',
+    fileName: 'Gesprek.mov',
+    title: 'Eindgesprek met mijn mediaprofessional',
+    teaser: 'Video — mijn handelen, hardop gespiegeld',
+    icon: 'video',
+    criteria: ['mediaprof', 'reflectie'],
     intro:
-      'Het CGI is een officieel examenonderdeel. Om mee te mogen doen moet mijn portfolio op orde zijn — en dat portfolio is zelf bewijs van mijn lerend vermogen.',
+      'Aan het eind van het blok voer ik een eindevaluatiegesprek met mijn externe mediaprofessional, Tijs Nieuwboer. Daarvan lever ik een video-opname (maximaal 3 minuten) in als onderdeel van mijn CGI — hier is die opname.',
     detail: [
-      '8 STARRT-formulieren waarin ik concrete situaties uit het blok uitwerk en erop reflecteer.',
-      'Minimaal 16 Portflow-entries: kleine, doorlopende reflecties op mijn proces.',
-      'Mijn CGI-presentatie plus de video-opname (max 3 min) van het eindevaluatiegesprek met mijn mediaprofessional, ingeleverd aan het eind van week 9.',
+      'In dit gesprek leg ik verantwoording af over hoe ik dit blok als mediaprofessional heb gehandeld: eerlijk over wat onze technologie wél en níet doet, transparant naar artiesten en retailers, en bereid om mijn keuzes te laten bevragen door iemand uit het vak.',
+      'Ik vroeg Tijs bewust om peer review op mijn technische én ethische keuzes. Dit gesprek is daarvan de afsluiting: niet ik die mijn eigen verhaal vertelt, maar iemand anders die mijn handelen spiegelt en toetst.',
     ],
     reflectie: [
-      'Het portfolio dwingt me om niet alleen te dóen, maar telkens te benoemen wat ik leerde. Die herhaalde reflectie (STARRT en Portflow) maakt mijn leerproces zichtbaar — voor de beoordelaar én voor mezelf.',
+      'Een video durven inleveren waarin iemand anders mijn gedrag beoordeelt, voelt kwetsbaarder dan een tekst die ik zelf in de hand heb. Juist dat maakt het waardevol: ethisch handelen toets je niet aan je eigen verhaal, maar aan hoe het overkomt op anderen.',
+      'Het gesprek dwingt me mijn valkuil — meegaan en aardig willen zijn — onder ogen te zien op het moment dat het telt: kan ik mijn keuzes verantwoorden, ook als de feedback ongemakkelijk is?',
     ],
+    quote: 'Mijn professionaliteit bewijs ik niet door mezelf te beoordelen, maar door me te laten beoordelen.',
+    video: {
+      src: '', // ← pad naar je opname, bv. '/bewijs/eindgesprek.mp4' of een YouTube/Vimeo-embed-URL
+      label: 'Eindevaluatiegesprek met mediaprofessional Tijs Nieuwboer (max. 3 min)',
+    },
     bewijs: [],
     vervolgstap:
-      'Mijn STARRT- en Portflow-reflecties gebruiken als rode draad in het CGI-gesprek.',
+      'De feedback uit dit gesprek meenemen als spiegel op mijn professionele en ethische gedrag — en blijven vragen om peer review, ook na het blok.',
   },
 
   // --------------------------------------------------------------------------
@@ -235,6 +256,7 @@ export const APPS: AppItem[] = [
       'Een besturingssysteem is nooit af. Deze updates zijn mijn volgende leerdoelen — voortgekomen uit wat ik dit afstudeerblok echt tegenkwam.',
     detail: [
       'Technisch een laag dieper: zelf modellen finetunen en mijn keuzes blijven onderbouwen in plaats van op gevoel.',
+      'Een open-source LLM zelf draaien: GLM-5.2 lokaal via Ollama. Zelf te hosten en niet afhankelijk van één leverancier — en met prestaties die volgens benchmarks dicht in de buurt komen van topmodellen als Claude Opus. Zo leer ik wat er écht onder de motorkap gebeurt.',
       'Mijn ethische standpunt over AI en artiesten blijven aanscherpen, ook als de markt anders duwt.',
       'Stevig blijven staan: in pitches en netwerken stelling nemen, niet alleen meebewegen.',
       'Reflectie als gewoonte houden: bouwlog en Portflow ook ná het blok.',
@@ -244,7 +266,7 @@ export const APPS: AppItem[] = [
       'Deze leerdoelen komen niet uit een formulier, maar uit echte momenten dit blok: bouwen, reflecteren, ethisch kiezen en voor 300 mensen gaan staan.',
     ],
     quote: 'Mijn volgende stap is niet harder werken, maar bewuster leren.',
-    bewijs: [],
+    bewijs: [{ label: 'GLM-5.2 op Ollama — open-source, zelf te draaien', href: 'https://ollama.com/library/glm-5.2' }],
     vervolgstap:
       'Verbinding — mijn kracht — combineren met stevigheid, onderbouwing en ethische scherpte.',
   },

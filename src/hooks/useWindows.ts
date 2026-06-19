@@ -37,6 +37,18 @@ export function useWindows() {
     })
   }, [])
 
+  /** Toon precies één venster (gebruikt door de rondleiding/presentatiemodus). */
+  const openOnly = useCallback((id: string) => {
+    const z = ++zRef.current
+    setWindows([{ id, z, x: 104, y: 56 }])
+    setOpenedEver((prev) => {
+      if (prev.has(id)) return prev
+      const next = new Set(prev)
+      next.add(id)
+      return next
+    })
+  }, [])
+
   const closeWindow = useCallback((id: string) => {
     setWindows((prev) => prev.filter((w) => w.id !== id))
   }, [])
@@ -69,6 +81,7 @@ export function useWindows() {
     openedEver,
     seenCriteria,
     openWindow,
+    openOnly,
     closeWindow,
     focusWindow,
     setPosition,

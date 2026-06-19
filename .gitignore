@@ -13,6 +13,8 @@ dist-ssr
 /*.png
 /*.webp
 /*.heic
+/*.mp4
+/*.mov
 
 # Persoonlijke documenten (ontwikkelcanvas v2 e.d.) — lokaal houden, niet publiceren
 /docs/

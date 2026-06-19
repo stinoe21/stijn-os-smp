@@ -8,7 +8,7 @@ const ITEMS: { naam: string; uitleg: string }[] = [
   { naam: 'POP.doc', uitleg: 'hoe ik mijn leren stuur' },
   { naam: 'Ethiek.exe', uitleg: 'de ethiek van AI-muziek' },
   { naam: 'Mediaprofessional.app', uitleg: 'ethisch handelen in de praktijk' },
-  { naam: 'Portfolio.dir', uitleg: 'mijn bewijslast voor het CGI' },
+  { naam: 'Gesprek.mov', uitleg: 'video: eindgesprek met mijn mediaprofessional' },
   { naam: 'Update v2.0', uitleg: 'volgende leerdoelen' },
 ]
 

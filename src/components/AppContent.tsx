@@ -71,11 +71,102 @@ function DocCard({ item }: { item: BewijsItem }) {
   )
 }
 
+function VideoPlayer({ video }: { video: NonNullable<AppItem['video']> }) {
+  const src = video.src?.trim()
+
+  if (!src) {
+    return (
+      <div className="mt-2 grid aspect-video w-full place-items-center border-2 border-ink/60 bg-[#0e2429]">
+        <span className="px-6 text-center font-pixel text-[8px] uppercase leading-relaxed text-paper/45">
+          ◉ video volgt
+          <br />
+          plaats de opname in public/bewijs/ en zet het pad in src/data/apps.ts
+        </span>
+      </div>
+    )
+  }
+
+  // Lokaal videobestand -> <video>; anders een embed-URL (YouTube/Vimeo/Drive) -> <iframe>.
+  const isFile = /\.(mp4|webm|mov|m4v|ogg)(\?|#|$)/i.test(src)
+
+  return (
+    <div className="mt-2 overflow-hidden border-2 border-ink bg-black shadow-window">
+      {isFile ? (
+        <video
+          src={withBase(src)}
+          poster={video.poster ? withBase(video.poster) : undefined}
+          controls
+          playsInline
+          preload="metadata"
+          className="aspect-video w-full bg-black"
+        />
+      ) : (
+        <iframe
+          src={src}
+          title={video.label ?? 'Video'}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+          allowFullScreen
+          className="aspect-video w-full"
+        />
+      )}
+    </div>
+  )
+}
+
 const POLAROID_ROTATIONS = ['-rotate-2', 'rotate-1', '-rotate-1', 'rotate-2']
 
-export default function AppContent({ app }: { app: AppItem }) {
+export default function AppContent({ app, compact = false }: { app: AppItem; compact?: boolean }) {
   const isReadme = app.id === 'readme'
   const isChangelog = app.id === 'update'
+
+  // Presentatiemodus: minimale tekst, maximaal beeld. Eén kernquote + visuals + volgende stap.
+  if (compact) {
+    const highlight = app.quote ?? app.reflectie[0] ?? app.intro
+    return (
+      <div className="font-sans text-ink">
+        <p className="font-pixel text-[10.5px] uppercase tracking-wide text-ink/50">{app.teaser}</p>
+        {app.criteria.length > 0 && (
+          <div className="mt-2 flex flex-wrap gap-1.5">
+            {app.criteria.map((c) => (
+              <CriteriaBadge key={c} id={c} />
+            ))}
+          </div>
+        )}
+
+        {highlight && (
+          <blockquote className="my-6 text-center font-crt text-[28px] leading-tight text-retroblue sm:text-3xl">
+            {app.quote ? `“${highlight}”` : highlight}
+          </blockquote>
+        )}
+
+        {app.video && (
+          <div className="mt-3">
+            <VideoPlayer video={app.video} />
+            {app.video.label && (
+              <p className="mt-1.5 text-center font-sans text-[12px] text-ink/55">{app.video.label}</p>
+            )}
+          </div>
+        )}
+
+        {app.bewijs.length > 0 && (
+          <div className="no-scrollbar -mx-1 mt-4 flex flex-wrap items-center justify-center gap-3 px-1 pb-1">
+            {app.bewijs.map((b, i) =>
+              b.href ? (
+                <DocCard key={i} item={b} />
+              ) : (
+                <Polaroid key={i} item={b} rotate={POLAROID_ROTATIONS[i % POLAROID_ROTATIONS.length]} />
+              ),
+            )}
+          </div>
+        )}
+
+        <p className="mt-6 flex items-start justify-center gap-2 text-center font-sans text-[14px] text-ink/70">
+          <span aria-hidden="true">{isReadme ? '🧠' : '→'}</span>
+          <span>{app.vervolgstap}</span>
+        </p>
+      </div>
+    )
+  }
 
   return (
     <div className="font-sans text-[15px] leading-relaxed text-ink">
@@ -126,6 +217,17 @@ export default function AppContent({ app }: { app: AppItem }) {
               </div>
             ))}
           </div>
+        </>
+      )}
+
+      {/* Video (bv. eindevaluatiegesprek) */}
+      {app.video && (
+        <>
+          <SectionLabel>Video</SectionLabel>
+          <VideoPlayer video={app.video} />
+          {app.video.label && (
+            <p className="mt-1.5 text-center font-sans text-[12px] text-ink/55">{app.video.label}</p>
+          )}
         </>
       )}
 
