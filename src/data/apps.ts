@@ -236,7 +236,7 @@ export const APPS: AppItem[] = [
     ],
     quote: 'Mijn professionaliteit bewijs ik niet door mezelf te beoordelen, maar door me te laten beoordelen.',
     video: {
-      src: '', // ← pad naar je opname, bv. '/bewijs/eindgesprek.mp4' of een YouTube/Vimeo-embed-URL
+      src: '/bewijs/mediaprof-eindgesprek.mp4',
       label: 'Eindevaluatiegesprek met mediaprofessional Tijs Nieuwboer (max. 3 min)',
     },
     bewijs: [],
