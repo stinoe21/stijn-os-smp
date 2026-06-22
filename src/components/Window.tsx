@@ -3,6 +3,7 @@ import type { PointerEvent as ReactPointerEvent, RefObject } from 'react'
 import type { AppItem } from '../types'
 import AppContent from './AppContent'
 import PixelIcon from './PixelIcon'
+import SnakeGame from './SnakeGame'
 
 const clamp = (v: number, min: number, max: number) => Math.max(min, Math.min(max, v))
 
@@ -97,7 +98,7 @@ export default function Window({
       <div className="window-scroll min-h-0 flex-1 overflow-y-auto bg-paper px-4 py-3">
         <h2 className="font-crt text-4xl leading-none text-ink">{app.title}</h2>
         <div className="mt-3">
-          <AppContent app={app} compact={compact} />
+          {app.id === 'snake' ? <SnakeGame /> : <AppContent app={app} compact={compact} />}
         </div>
       </div>
     </div>

@@ -206,4 +206,22 @@ export const APPS: AppItem[] = [
     vervolgstap:
       'Blijven ondernemen en leren: mijn werk onderbouwen, ethisch scherp blijven en technisch onafhankelijker worden.',
   },
+
+  // --------------------------------------------------------------------------
+  // Retro-extraatje: een zelfgebouwde Snake-mini-game. Geen CGI-onderdeel
+  // (extra: true) — telt niet mee in de "bekeken"-teller en zit niet in de
+  // rondleiding. De inhoud rendert via <SnakeGame />, niet via AppContent.
+  {
+    id: 'snake',
+    fileName: 'Snake.exe',
+    title: 'Snake — retro-extraatje',
+    teaser: 'Even spelen: klassieke Snake',
+    icon: 'snake',
+    extra: true,
+    criteria: [],
+    detail: [],
+    reflectie: [],
+    bewijs: [],
+    vervolgstap: '',
+  },
 ]

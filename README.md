@@ -39,6 +39,9 @@ npm run preview  # bekijk de build lokaal
 
 `LEESMIJ.txt` · `Gesprek.mov` · `Bouwlog.exe` · `BackToBeing.app` · `Ethiek.exe` · `Update v2.0`
 
+Plus een retro-extraatje: `Snake.exe` — een zelfgebouwde mini-game (pijltjes/WASD/D-pad). Het
+telt niet mee als CGI-onderdeel en zit niet in de rondleiding.
+
 De meter rechtsboven vinkt de vier LV-deelaspecten af naarmate je vensters opent. Geopende
 iconen krijgen een groene ✓ en de statusbalk toont hoeveel onderdelen je al bekeken hebt.
 

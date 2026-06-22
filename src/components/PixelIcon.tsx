@@ -17,6 +17,7 @@ const TILE: Record<IconKey, string> = {
   pop: '#b5832e',
   ethiek: '#5b5a7a',
   video: '#8f3b4d',
+  snake: '#1f6f3f',
 }
 
 const INK = '#1b1710'
@@ -176,6 +177,26 @@ function Glyph({ icon }: { icon: IconKey }) {
           <polygon points="23,6 25.5,6 23.5,11 21,11" fill={INK} />
           {/* play-driehoek */}
           <polygon points="14,15 14,23 22,19" fill="#f6b13c" stroke={INK} strokeWidth="0.5" strokeLinejoin="round" />
+        </>
+      )
+    case 'snake':
+      // Chunky pixel-slang op een raster + appeltje = mini-game
+      return (
+        <>
+          {/* speelveld */}
+          <rect x="5" y="6" width="22" height="20" fill="#0e2429" stroke={INK} strokeWidth="1" />
+          {/* slang (lichaam) */}
+          <rect x="8" y="9" width="4" height="4" fill="#7ee787" />
+          <rect x="12" y="9" width="4" height="4" fill="#7ee787" />
+          <rect x="16" y="9" width="4" height="4" fill="#7ee787" />
+          <rect x="16" y="13" width="4" height="4" fill="#7ee787" />
+          <rect x="16" y="17" width="4" height="4" fill="#7ee787" />
+          {/* kop (lichter) */}
+          <rect x="12" y="17" width="4" height="4" fill="#b8f5c0" />
+          <rect x="13.5" y="18.2" width="1" height="1" fill={INK} />
+          {/* appeltje */}
+          <rect x="9" y="20" width="3" height="3" fill="#f6b13c" />
+          <rect x="10" y="18.5" width="1" height="1.5" fill="#cf6f18" />
         </>
       )
   }

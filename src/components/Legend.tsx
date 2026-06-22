@@ -7,6 +7,7 @@ const ITEMS: { naam: string; uitleg: string }[] = [
   { naam: 'BackToBeing.app', uitleg: 'ondernemen, groei én ethiek in de praktijk' },
   { naam: 'Ethiek.exe', uitleg: 'van AI-muziek tot privacy' },
   { naam: 'Update v2.0', uitleg: 'volgende leerdoelen' },
+  { naam: 'Snake.exe', uitleg: 'retro-extraatje — even spelen' },
 ]
 
 export default function Legend() {

@@ -37,6 +37,7 @@ export type IconKey =
   | 'pop' // Persoonlijk ontwikkelplan
   | 'ethiek' // Weegschaal / ethische afweging
   | 'video' // Filmklapper / eindevaluatie-opname
+  | 'snake' // Mini-game (retro-extraatje)
 
 /** Eén bewijsstuk: een foto (polaroid) of een link naar een document (PDF). */
 export interface BewijsItem {
@@ -97,4 +98,9 @@ export interface AppItem {
   vervolgstap: string
   /** Accent-icoon (bv. README valt op). */
   accent?: boolean
+  /**
+   * "Extra" (geen beoordelingsonderdeel) — bv. de Snake-mini-game. Telt niet mee
+   * in de "x / y bekeken"-teller en zit niet in de rondleiding.
+   */
+  extra?: boolean
 }

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { APPS } from './data/apps'
 import BootScreen from './components/BootScreen'
 import Desktop from './components/Desktop'
 import MenuBar from './components/MenuBar'
@@ -30,6 +31,10 @@ export default function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [booted])
 
+  // "Extra's" (bv. Snake.exe) tellen niet mee in de bekeken-teller.
+  const extraIds = new Set(APPS.filter((a) => a.extra).map((a) => a.id))
+  const seenCount = [...wm.openedEver].filter((id) => !extraIds.has(id)).length
+
   if (!booted) return <BootScreen onDone={() => setBooted(true)} />
 
   return (
@@ -56,7 +61,7 @@ export default function App() {
           <PresentationBar p={presentation} />
           <StatusBar
             openCount={wm.windows.length}
-            seenCount={wm.openedEver.size}
+            seenCount={seenCount}
             total={presentation.total}
           />
         </div>
