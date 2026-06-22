@@ -150,10 +150,10 @@ export const APPS: AppItem[] = [
     icon: 'video',
     criteria: ['mediaprof', 'reflectie'],
     intro:
-      'Aan het eind van het blok voer ik een eindevaluatiegesprek met mijn externe mediaprofessional, Tijs Nieuwboer. Daarvan lever ik een video-opname (maximaal 3 minuten) in als onderdeel van mijn CGI — hier is die opname.',
+      'Aan het eind van het blok voer ik een eindevaluatiegesprek met mijn externe mediaprofessional. Daarvan lever ik een video-opname (maximaal 3 minuten) in als onderdeel van mijn CGI — hier is die opname.',
     detail: [
       'In dit gesprek leg ik verantwoording af over hoe ik dit blok als mediaprofessional heb gehandeld: eerlijk over wat onze technologie wél en níet doet, transparant naar artiesten en retailers, en bereid om mijn keuzes te laten bevragen door iemand uit het vak.',
-      'Ik vroeg Tijs bewust om peer review op mijn technische én ethische keuzes. Dit gesprek is daarvan de afsluiting: niet ik die mijn eigen verhaal vertelt, maar iemand anders die mijn handelen spiegelt en toetst.',
+      'Ik vroeg mijn mediaprofessional bewust om peer review op mijn technische én ethische keuzes. Dit gesprek is daarvan de afsluiting: niet ik die mijn eigen verhaal vertelt, maar iemand anders die mijn handelen spiegelt en toetst.',
     ],
     reflectie: [
       'Een video durven inleveren waarin iemand anders mijn gedrag beoordeelt, voelt kwetsbaarder dan een tekst die ik zelf in de hand heb. Juist dat maakt het waardevol: ethisch handelen toets je niet aan je eigen verhaal, maar aan hoe het overkomt op anderen.',
@@ -162,7 +162,7 @@ export const APPS: AppItem[] = [
     quote: 'Mijn professionaliteit bewijs ik niet door mezelf te beoordelen, maar door me te laten beoordelen.',
     video: {
       src: '/bewijs/mediaprof-eindgesprek.mp4',
-      label: 'Eindevaluatiegesprek met mediaprofessional Tijs Nieuwboer (max. 3 min)',
+      label: 'Eindevaluatiegesprek met mijn mediaprofessional (max. 3 min)',
     },
     bewijs: [],
     vervolgstap:
