@@ -122,13 +122,12 @@ export default function SnakeGame() {
   const step = useCallback(() => {
     const g = gameRef.current!
     g.dir = g.nextDir
-    const head = { x: g.snake[0].x + g.dir.x, y: g.snake[0].y + g.dir.y }
-
-    // muur?
-    if (head.x < 0 || head.x >= GRID || head.y < 0 || head.y >= GRID) {
-      endGame()
-      return
+    // Wrap-around: door een rand gaan = aan de overkant weer tevoorschijn komen.
+    const head = {
+      x: (g.snake[0].x + g.dir.x + GRID) % GRID,
+      y: (g.snake[0].y + g.dir.y + GRID) % GRID,
     }
+
     // jezelf? (de staartpunt schuift weg als je niet eet)
     const eat = head.x === g.food.x && head.y === g.food.y
     const body = eat ? g.snake : g.snake.slice(0, -1)
