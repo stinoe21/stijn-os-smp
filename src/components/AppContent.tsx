@@ -145,6 +145,17 @@ export default function AppContent({ app, compact = false }: { app: AppItem; com
             <p className="my-5 text-center font-sans text-[17px] leading-relaxed text-ink/85">{highlight}</p>
           ))}
 
+        {app.kernpunten && app.kernpunten.length > 0 && (
+          <ul className="mx-auto mt-3 max-w-[440px] space-y-2">
+            {app.kernpunten.map((k, i) => (
+              <li key={i} className="flex gap-2 text-[15px] leading-snug text-ink/85">
+                <span className="mt-0.5 font-pixel text-[11px] text-accent-dark">▸</span>
+                <span>{k}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+
         {app.video && (
           <div className="mt-3">
             <VideoPlayer video={app.video} />

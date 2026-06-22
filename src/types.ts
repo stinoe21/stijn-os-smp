@@ -72,6 +72,12 @@ export interface AppItem {
   intro?: string
   /** Detailpunten / alinea's. */
   detail: string[]
+  /**
+   * Optionele korte kernpunten — alleen getoond in de presentatiemodus (compact).
+   * Handig om een onderwerp met meerdere pijlers (bv. Ethiek) tóch zichtbaar te
+   * houden zonder de volledige detailtekst.
+   */
+  kernpunten?: string[]
   /** Optionele "vertaaltabel" (techniek → klantwaarde), alleen voor Vertaler.app. */
   vertaaltabel?: { van: string; naar: string }[]
   /** Reflectie-blok (één of meer alinea's). */

@@ -127,12 +127,22 @@ export const APPS: AppItem[] = [
       'Kwetsbare jongeren (Back to Being): we bouwen een AI-app die rust belooft tegen prestatiedruk en faalangst. Juist dán moet je ethisch scherp zijn — een tool die rust belooft mag zelf nooit een nieuwe bron van druk of afhankelijkheid worden.',
       'Privacy in de winkel (RAAIT-keynote): om bezoekers te tellen gebruiken we hitte-sensoren in plaats van camera’s, zoals veel anderen wél doen. Je ziet alleen een 0 of een 1 — er is wel of geen persoon — maar die persoon is niet te identificeren. Meten zonder mensen herkenbaar vast te leggen: privacy by design.',
     ],
+    kernpunten: [
+      'AI-muziek (Kaires): eerlijk en transparant naar artiesten — geen marketingverhaal.',
+      'Kwetsbare jongeren (Back to Being): rust beloven mag nooit nieuwe druk worden.',
+      'Privacy in de winkel: tellen met hitte-sensoren, niet met camera’s — niet te identificeren.',
+    ],
     reflectie: [
       'Slimme technologie is nooit neutraal. Of het nu om muziek, mentale gezondheid of meten in de winkel gaat: de ethische keuze zit in transparantie én in wat je bewust níet vastlegt.',
       'Kritisch reflecteren betekent voor mij ook dat ik een ethische vraag niet wegpoets omdat het commercieel goed uitkomt — bijvoorbeeld dat we Buma/Sena omzeilen. Juist op die punten moet ik scherp blijven.',
     ],
     quote: 'Dat iets juridisch mag, betekent niet dat het ethisch klopt.',
-    bewijs: [],
+    bewijs: [
+      {
+        label: 'Anonieme hitte-sensor: telt mensen als 0 of 1, zonder ze te identificeren',
+        image: '/bewijs/anonieme-hittesensor.png',
+      },
+    ],
     vervolgstap:
       'Mijn ethische standpunt — over artiesten, kwetsbare jongeren én privacy — onderbouwen en blijven toetsen, ook als de markt anders duwt.',
   },
