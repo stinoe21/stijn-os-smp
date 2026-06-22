@@ -112,102 +112,27 @@ export const APPS: AppItem[] = [
 
   // --------------------------------------------------------------------------
   {
-    id: 'spiegel',
-    fileName: 'Spiegel.sys',
-    title: 'Verbinden én richting geven',
-    teaser: 'Kritische reflectie op mijn gedrag',
-    icon: 'spiegel',
-    criteria: ['reflectie'],
-    intro:
-      'Een rode draad in mijn leerproces is hoe ik mij tot anderen verhoud. Mijn kracht is dat ik goed kan luisteren, verbanden zie, rust bewaar en mensen verbind. Mijn valkuil is dat ik in klantcontacten te snel meega en mijn eigen visie laat liggen.',
-    detail: [
-      'Door mijn werk aan Kaires leerde ik dat verbinden alleen niet genoeg is. Ondernemen vraagt ook richting geven: als Head of Technology moest ik technische keuzes maken én verantwoorden, en in de keynote moest ik staan voor het verhaal in plaats van mee te bewegen. Aardig en meedenkend zijn is voor mij makkelijker dan stelling nemen — dat is precies waar mijn groei zit.',
-      'Voor dit blok maakte ik die groei concreet. In plaats van een vaag "assertiever worden"-doel koos ik twee echte momenten: de keynote op het RAAIT-event (samen met Max, voor 300 retailers in de zaal) en bewust netwerken op datzelfde event — niet afwachten, maar mensen benaderen met een doel vooraf.',
-      'Na afloop reflecteer ik telkens op hetzelfde: waar heb ik meegegeven, en waar heb ik richting gegeven?',
-    ],
-    reflectie: [
-      'Mijn groei zit niet in minder verbindend worden, maar in verbinding combineren met stevigheid. Kritisch reflecteren betekent voor mij ook durven zien waar mijn kracht — meebewegen — omslaat in een valkuil.',
-      'De tweewekelijkse check-ins met mijn coach en met Max gaan daarom bewust over gedrag, niet alleen over output. Dat is mijn spiegel.',
-    ],
-    quote: 'Verbinden is mijn kracht. Richting geven is mijn groei.',
-    bewijs: [],
-    vervolgstap:
-      'Bij elke pitch en netwerksituatie bewust richting geven en achteraf reflecteren op mijn gedrag, niet alleen op het resultaat.',
-  },
-
-  // --------------------------------------------------------------------------
-  {
-    id: 'pop',
-    fileName: 'POP.doc',
-    title: 'Mijn Persoonlijk Ontwikkelplan',
-    teaser: 'Hoe ik mijn leren stuur',
-    icon: 'pop',
-    criteria: ['leerproces', 'reflectie'],
-    intro:
-      'Mijn POP voor het afstudeerblok van de Ad SMP: 420 uur, drie persoonlijke doelen met acties, benodigdheden en planning. Het laat zien dat ik mijn leerproces bewust stuur in plaats van het te laten gebeuren.',
-    detail: [
-      'Doel 1 — Technische verdieping als Head of Technology: een laag dieper dan tools aan elkaar knopen. Modellen finetunen, de weighted matrix onderbouwd opbouwen en mijn keuzes kunnen beargumenteren.',
-      'Doel 2 — Ethische en juridische positionering van AI-muziek: een gefundeerd eigen standpunt, geen marketingverhaal (zie Ethiek.exe).',
-      'Doel 3 — Van subassertief naar stevig staan: de keynote en het netwerken op het RAAIT-event als concrete momenten (zie Spiegel.sys).',
-      'Planning: week 1–2 onderzoeksopzet en deskresearch ethiek · week 3–6 matrix uitbouwen, eerste pilot live, model finetunen · week 7–9 tweede pilot live en data verzamelen (verblijftijd, conversie) · week 10 RAAIT-keynote · week 11–13 ethische reflectie afronden, eindproduct en eindpresentatie. Wekelijks 2u reflectie/logboek plus check-ins met coach en Max.',
-    ],
-    reflectie: [
-      'Mijn POP is mijn stuurinstrument. Ik merk dat ik zonder plan afdrijf naar wat ik leuk vind (bouwen). Door doelen, acties én planning te benoemen maak ik mijn leren stuurbaar en meetbaar — bijvoorbeeld met een baseline aan data vóór de uitrol.',
-      'Reflecteren op het plan zelf is ook leerzaam: mijn doelen verschoven bewust van de minor (salescalls) naar twee scherpe momenten op RAAIT. Die verschuiving is op zichzelf bewijs dat ik mijn leerproces stuur.',
-    ],
-    bewijs: [{ label: 'Mijn volledige POP (Blok 8) — document', href: '/bewijs/POP-Blok8-Stijn-Smit.docx' }],
-    vervolgstap:
-      'Mijn POP gebruiken als levend document: doelen toetsen aan de pilotdata en bijstellen waar de praktijk daarom vraagt.',
-  },
-
-  // --------------------------------------------------------------------------
-  {
     id: 'ethiek',
     fileName: 'Ethiek.exe',
-    title: 'De ethiek van AI-muziek',
+    title: 'Ethiek: van AI-muziek tot privacy',
     teaser: 'Ethische impact van slimme technologie',
     icon: 'ethiek',
     criteria: ['ethiek'],
     intro:
-      'Kaires maakt AI-muziek voor retail. Juridisch is uitgezocht dat we Buma/Sena omzeilen omdat we geen bestaande rechten gebruiken. Maar de ethische laag had ik nog niet onderbouwd — en dat is precies wat LV 4.3 van mij vraagt.',
+      'Ethiek is voor mij geen los hoofdstuk, maar een rode draad door alles wat ik bouw: AI-muziek bij Kaires, een app voor kwetsbare jongeren bij Back to Being, en hoe we mensen meten in de winkel. LV 4.3 vraagt me die afwegingen expliciet te maken.',
     detail: [
-      'De kernvraag: wat betekent generatieve AI-muziek voor artiesten, en hoe transparant zijn we richting de retailer en de eindklant?',
-      'Mijn aanpak: deskresearch naar bestaande ethische frameworks voor generatieve AI, een expert-interview met iemand uit de muziekindustrie over AI en artiestenrecht, en mijn positie formuleren in het adviesrapport.',
-      'Ik wil geen marketingverhaal, maar een gefundeerd standpunt dat ik ook kan verdedigen als het ongemakkelijk is.',
+      'AI-muziek (Kaires): juridisch is uitgezocht dat we Buma/Sena omzeilen omdat we geen bestaande rechten gebruiken. Maar de ethische vraag blijft staan: wat betekent generatieve AI-muziek voor artiesten, en hoe transparant zijn we richting retailer en eindklant? Ik wil daar een gefundeerd standpunt over, geen marketingverhaal.',
+      'Kwetsbare jongeren (Back to Being): we bouwen een AI-app die rust belooft tegen prestatiedruk en faalangst. Juist dán moet je ethisch scherp zijn — een tool die rust belooft mag zelf nooit een nieuwe bron van druk of afhankelijkheid worden.',
+      'Privacy in de winkel (RAAIT-keynote): om bezoekers te tellen gebruiken we hitte-sensoren in plaats van camera’s, zoals veel anderen wél doen. Je ziet alleen een 0 of een 1 — er is wel of geen persoon — maar die persoon is niet te identificeren. Meten zonder mensen herkenbaar vast te leggen: privacy by design.',
     ],
     reflectie: [
-      'Slimme technologie is nooit neutraal. AI-muziek kan werk van artiesten verdringen óf nieuwe ruimte maken — wat "eerlijk" is, hangt af van transparantie en keuzevrijheid.',
-      'Kritisch reflecteren betekent voor mij ook dat ik de ethische vraag niet wegpoets omdat het commercieel goed uitkomt dat we Buma/Sena omzeilen. Juist op dat punt moet ik scherp blijven.',
+      'Slimme technologie is nooit neutraal. Of het nu om muziek, mentale gezondheid of meten in de winkel gaat: de ethische keuze zit in transparantie én in wat je bewust níet vastlegt.',
+      'Kritisch reflecteren betekent voor mij ook dat ik een ethische vraag niet wegpoets omdat het commercieel goed uitkomt — bijvoorbeeld dat we Buma/Sena omzeilen. Juist op die punten moet ik scherp blijven.',
     ],
     quote: 'Dat iets juridisch mag, betekent niet dat het ethisch klopt.',
     bewijs: [],
     vervolgstap:
-      'Mijn ethische standpunt over AI-muziek onderbouwen in het adviesrapport en toetsen aan mijn expert-interview.',
-  },
-
-  // --------------------------------------------------------------------------
-  {
-    id: 'mediaprof',
-    fileName: 'Mediaprofessional.app',
-    title: 'Mijn rol als mediaprofessional',
-    teaser: 'Ethisch handelen in de praktijk',
-    icon: 'keynote',
-    criteria: ['mediaprof', 'ethiek'],
-    intro:
-      'Lerend vermogen gaat ook over hoe ik mij gedraag als mediaprofessional: eerlijk, transparant en verantwoordelijk — ook als dat lastiger is dan het mooie verhaal.',
-    detail: [
-      'Ik werk samen met mediaprofessional Tijs Nieuwboer als tech-sparringpartner en vraag bewust peer review op mijn keuzes. Leren van iemand uit het vak hoort voor mij bij professioneel handelen.',
-      'Op het RAAIT-event presenteer ik Kaires voor 300 retailers. Daar handel ik ethisch door eerlijk te zijn over wat onze technologie wél en níet doet, in plaats van te overclaimen.',
-      'Aan het eind van het blok voer ik een eindevaluatiegesprek met mijn externe mediaprofessional. Daarvan lever ik een video-opname (maximaal 3 minuten) in als onderdeel van mijn CGI.',
-    ],
-    reflectie: [
-      'Ethisch handelen als mediaprofessional betekent voor mij: mijn werk kunnen verantwoorden tegenover artiesten, klanten én mezelf. Transparantie is geen sluitstuk, maar onderdeel van het product.',
-      'Mijn valkuil — meegaan en aardig willen zijn — kan hier juist een ethische kracht worden: ik wil niet pushen met loze beloftes, maar bouwen aan vertrouwen.',
-    ],
-    quote: 'Een mediaprofessional verkoopt geen beloftes, maar staat achter wat hij maakt.',
-    bewijs: [],
-    vervolgstap:
-      'Mijn eindevaluatie met de mediaprofessional benutten als spiegel op mijn professionele en ethische gedrag.',
+      'Mijn ethische standpunt — over artiesten, kwetsbare jongeren én privacy — onderbouwen en blijven toetsen, ook als de markt anders duwt.',
   },
 
   // --------------------------------------------------------------------------
@@ -255,12 +180,11 @@ export const APPS: AppItem[] = [
     intro:
       'Een besturingssysteem is nooit af. Deze updates zijn mijn volgende leerdoelen — voortgekomen uit wat ik dit afstudeerblok echt tegenkwam.',
     detail: [
+      'Verder bouwen aan mijn ondernemerschap: Kaires en Back to Being doorzetten en alles wat ik leer direct in de praktijk brengen.',
+      'Eigen open-source modellen draaien (zoals GLM-5.2 via Ollama): goedkoper én minder afhankelijk van de grote techcorporaties. Ik draai ze lokaal op eigen hardware — een aparte laptop die het zware modelwerk doet en lang kan blijven staan, naast de laptop waarop ik gewoon mijn werk verricht.',
       'Technisch een laag dieper: zelf modellen finetunen en mijn keuzes blijven onderbouwen in plaats van op gevoel.',
-      'Een open-source LLM zelf draaien: GLM-5.2 lokaal via Ollama. Zelf te hosten en niet afhankelijk van één leverancier — en met prestaties die volgens benchmarks dicht in de buurt komen van topmodellen als Claude Opus. Zo leer ik wat er écht onder de motorkap gebeurt.',
-      'Mijn ethische standpunt over AI en artiesten blijven aanscherpen, ook als de markt anders duwt.',
-      'Stevig blijven staan: in pitches en netwerken stelling nemen, niet alleen meebewegen.',
-      'Reflectie als gewoonte houden: bouwlog en Portflow ook ná het blok.',
-      'Leren zichtbaar maken: keuzes documenteren zodat anderen — en ikzelf later — ze kunnen volgen.',
+      'Mijn ethische standpunt over AI, artiesten en privacy blijven aanscherpen, ook als de markt anders duwt.',
+      'Reflectie als gewoonte houden en mijn keuzes blijven documenteren — zodat mijn leren zichtbaar blijft, ook ná het blok.',
     ],
     reflectie: [
       'Deze leerdoelen komen niet uit een formulier, maar uit echte momenten dit blok: bouwen, reflecteren, ethisch kiezen en voor 300 mensen gaan staan.',
@@ -268,6 +192,6 @@ export const APPS: AppItem[] = [
     quote: 'Mijn volgende stap is niet harder werken, maar bewuster leren.',
     bewijs: [{ label: 'GLM-5.2 op Ollama — open-source, zelf te draaien', href: 'https://ollama.com/library/glm-5.2' }],
     vervolgstap:
-      'Verbinding — mijn kracht — combineren met stevigheid, onderbouwing en ethische scherpte.',
+      'Blijven ondernemen en leren: mijn werk onderbouwen, ethisch scherp blijven en technisch onafhankelijker worden.',
   },
 ]

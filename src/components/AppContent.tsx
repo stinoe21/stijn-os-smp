@@ -121,7 +121,10 @@ export default function AppContent({ app, compact = false }: { app: AppItem; com
 
   // Presentatiemodus: minimale tekst, maximaal beeld. Eén kernquote + visuals + volgende stap.
   if (compact) {
-    const highlight = app.quote ?? app.reflectie[0] ?? app.intro
+    // LEESMIJ toont de introductie (geen quote/reflectie); andere apps tonen hun kernquote.
+    const useIntro = isReadme
+    const highlight = useIntro ? app.intro : (app.quote ?? app.intro ?? app.reflectie[0])
+    const asQuote = !useIntro && !!app.quote
     return (
       <div className="font-sans text-ink">
         <p className="font-pixel text-[10.5px] uppercase tracking-wide text-ink/50">{app.teaser}</p>
@@ -133,11 +136,14 @@ export default function AppContent({ app, compact = false }: { app: AppItem; com
           </div>
         )}
 
-        {highlight && (
-          <blockquote className="my-6 text-center font-crt text-[28px] leading-tight text-retroblue sm:text-3xl">
-            {app.quote ? `“${highlight}”` : highlight}
-          </blockquote>
-        )}
+        {highlight &&
+          (asQuote ? (
+            <blockquote className="my-6 text-center font-crt text-[28px] leading-tight text-retroblue sm:text-3xl">
+              “{highlight}”
+            </blockquote>
+          ) : (
+            <p className="my-5 text-center font-sans text-[17px] leading-relaxed text-ink/85">{highlight}</p>
+          ))}
 
         {app.video && (
           <div className="mt-3">

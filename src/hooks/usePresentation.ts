@@ -1,9 +1,11 @@
 import { useCallback, useEffect, useState } from 'react'
 import { APPS } from '../data/apps'
 
-// Vaste volgorde van de rondleiding = de volgorde van de apps op het bureaublad.
-// Dit is het verhaal dat je tijdens het CGI vertelt: van intro naar volgende leerdoelen.
-const ORDER = APPS.map((a) => a.id)
+// Vaste volgorde van de rondleiding = het verhaal dat je tijdens het CGI vertelt.
+// Intro -> meteen de eindgesprek-video -> deliverables/groei -> ethiek -> volgende leerdoelen.
+// (Onbekende/verwijderde id's worden er automatisch uitgefilterd.)
+const PRESENTATION_ORDER = ['readme', 'evaluatie', 'bouwlog', 'being', 'ethiek', 'update']
+const ORDER = PRESENTATION_ORDER.filter((id) => APPS.some((a) => a.id === id))
 
 /**
  * Presentatie-/rondleidingmodus: loodst je stap voor stap door alle vensters.

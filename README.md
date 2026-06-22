@@ -37,8 +37,7 @@ npm run preview  # bekijk de build lokaal
 
 ## De vensters (programma's)
 
-`LEESMIJ.txt` · `Bouwlog.exe` · `BackToBeing.app` · `Spiegel.sys` · `POP.doc` · `Ethiek.exe` ·
-`Mediaprofessional.app` · `Gesprek.mov` · `Update v2.0`
+`LEESMIJ.txt` · `Gesprek.mov` · `Bouwlog.exe` · `BackToBeing.app` · `Ethiek.exe` · `Update v2.0`
 
 De meter rechtsboven vinkt de vier LV-deelaspecten af naarmate je vensters opent. Geopende
 iconen krijgen een groene ✓ en de statusbalk toont hoeveel onderdelen je al bekeken hebt.

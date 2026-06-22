@@ -2,13 +2,10 @@
 // dat elk icoon een onderdeel van de ontwikkeling opent. Puur informatief.
 
 const ITEMS: { naam: string; uitleg: string }[] = [
-  { naam: 'Bouwlog.exe', uitleg: 'hóe ik leer: door te bouwen' },
-  { naam: 'BackToBeing.app', uitleg: 'de motor achter mijn reflectie' },
-  { naam: 'Spiegel.sys', uitleg: 'kritische reflectie op wie ik ben' },
-  { naam: 'POP.doc', uitleg: 'hoe ik mijn leren stuur' },
-  { naam: 'Ethiek.exe', uitleg: 'de ethiek van AI-muziek' },
-  { naam: 'Mediaprofessional.app', uitleg: 'ethisch handelen in de praktijk' },
   { naam: 'Gesprek.mov', uitleg: 'video: eindgesprek met mijn mediaprofessional' },
+  { naam: 'Bouwlog.exe', uitleg: 'leren door te bouwen + mijn webdesign-groei' },
+  { naam: 'BackToBeing.app', uitleg: 'ondernemen, groei én ethiek in de praktijk' },
+  { naam: 'Ethiek.exe', uitleg: 'van AI-muziek tot privacy' },
   { naam: 'Update v2.0', uitleg: 'volgende leerdoelen' },
 ]
 
