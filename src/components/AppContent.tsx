@@ -98,7 +98,7 @@ function VideoPlayer({ video }: { video: NonNullable<AppItem['video']> }) {
           controls
           playsInline
           preload="metadata"
-          className="aspect-video w-full bg-black"
+          className="aspect-video w-full bg-black object-contain"
         />
       ) : (
         <iframe

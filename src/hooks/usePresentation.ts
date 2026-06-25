@@ -2,9 +2,10 @@ import { useCallback, useEffect, useState } from 'react'
 import { APPS } from '../data/apps'
 
 // Vaste volgorde van de rondleiding = het verhaal dat je tijdens het CGI vertelt.
-// Intro -> meteen de eindgesprek-video -> deliverables/groei -> ethiek -> volgende leerdoelen.
+// Intro -> hóe ik leer -> wat ik al neerzette (Megathon) -> ethiek -> eindgesprek ->
+// toekomst (Back to Being) -> volgende leerdoelen.
 // (Onbekende/verwijderde id's worden er automatisch uitgefilterd.)
-const PRESENTATION_ORDER = ['readme', 'evaluatie', 'bouwlog', 'being', 'ethiek', 'update']
+const PRESENTATION_ORDER = ['readme', 'bouwlog', 'megathon', 'ethiek', 'evaluatie', 'being', 'update']
 const ORDER = PRESENTATION_ORDER.filter((id) => APPS.some((a) => a.id === id))
 
 /**

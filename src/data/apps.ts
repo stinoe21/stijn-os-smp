@@ -34,8 +34,8 @@ export const APPS: AppItem[] = [
     intro:
       'Welkom in Stijn OS: een klein besturingssysteem dat ik zelf heb gebouwd als vorm én bewijs van mijn lerend vermogen, voor het Criteriumgericht Interview van de Ad Smart Media Production.',
     detail: [
-      'Mijn leren speelt zich af in mijn ondernemerschap: als Head of Technology bij Kaires (AI-muziek voor retail) én in Back to Being, waar ik met een team een AI-app voor mentale gezondheid bouw voor Stichting MIND.',
-      'Elk programma op dit bureaublad opent een onderdeel van mijn leren: hóe ik leer, kritische reflectie op wie ik ben, mijn ontwikkelplan, de ethiek van AI-muziek, mijn rol als mediaprofessional en mijn volgende leerdoelen.',
+      'Mijn leren speelt zich af in mijn ondernemerschap: als Head of Technology bij Kaires (AI-muziek voor retail), als mede-organisator van de Megathon — de grootste hackathon van Europa — en met Back to Being, de venture waarmee ik ná mijn afstuderen verderga.',
+      'Elk programma op dit bureaublad opent een onderdeel van mijn leren: hóe ik leer door te bouwen, wat ik al heb neergezet (de Megathon en een pitch bij Google), de ethiek van slimme technologie, mijn rol als mediaprofessional, mijn toekomst met Back to Being en mijn volgende leerdoelen.',
       'Rechtsboven zie je de vier deelaspecten van Lerend Vermogen die het CGI beoordeelt: kritische reflectie en inzicht in mijn leerproces (LV 1.3), en ethische impact en ethisch handelen als mediaprofessional (LV 4.3). Elk venster laat zien welk aspect het afdekt.',
       'Het feit dat deze site bestaat, is zelf ook bewijs van lerend vermogen. Ik heb hem zelf gebouwd — door te doen, te testen en te reflecteren op wat wel en niet werkte.',
     ],
@@ -83,33 +83,38 @@ export const APPS: AppItem[] = [
   },
 
   // --------------------------------------------------------------------------
-  // Let op: enkele partners zijn nog in gesprek (Wispr Flow, Google) — voorzichtig
-  // formuleren en checken vóór publicatie van de openbare site.
+  // "Al geweest" — afgeronde prestaties buiten de techniek om: een groot event
+  // mee-organiseren en pitchen bij Google. Leren door te doen + netwerk (LV 1.3).
   {
-    id: 'being',
-    fileName: 'BackToBeing.app',
-    title: 'Back to Being — kantoor in een rugzak',
-    teaser: 'Leren door te bouwen, op de Camino',
-    icon: 'being',
-    criteria: ['reflectie', 'leerproces', 'ethiek'],
+    id: 'megathon',
+    fileName: 'Megathon.exe',
+    title: 'Megathon — de grootste hackathon van Europa mee-organiseren',
+    teaser: 'Leren door te doen: organiseren & netwerk',
+    icon: 'netwerk',
+    criteria: ['leerproces', 'reflectie'],
     intro:
-      'Back to Being (backtobeing.tech) is de venture die ik met z’n drieën bouw: een AI-gestuurde app voor mentale gezondheid voor Stichting MIND. We zijn er volop mee bezig, en dit traject is voor mij een enorme versneller van mijn lerend vermogen.',
+      'Naast bouwen leer ik minstens zo veel door te ondernemen en mensen te ontmoeten. De Megathon — de grootste hackathon van Europa — heb ik mede-georganiseerd vanuit TAG, het kantoor waar ik werk. Een evenement met 500+ builders van begin tot eind mee regelen was misschien wel mijn leerzaamste "leren door te doen" van dit blok.',
     detail: [
-      'Het probleem dat we aanpakken: jongeren ervaren veel prestatiedruk, faalangst en FOMO. Mind Young had daar een e-maillijst voor — vijf weken lang wekelijks opdrachten om even uit je hoofd te stappen en in het moment te komen — maar dat resoneert nauwelijks bij jongeren; ze schrijven zich er simpelweg niet voor in.',
-      'Onze oplossing is een AI-gestuurde app die diezelfde opdrachten interactief maakt: quotes, opdrachten die je op het platform uitvoert en boeksuggesties. Dat sluit veel beter aan bij de doelgroep dan een e-mailblast.',
-      'De manier waaróp we het bouwen is zelf een leerexperiment. Van 24 tot en met 31 augustus 2026 lopen we met z’n drieën de Camino: we vliegen naar Porto, reizen door naar Tui en lopen vandaar zo’n 120 km naar Santiago de Compostela — terwijl we onderweg de app bouwen. Ons kantoor zit dan letterlijk in onze rugzak: laptops mee, smartglasses om onze schermen te zien, Starlink voor bereik en AI-agents die we via onze AirPods aanspreken. Techleap is aangehaakt, remote is onze nieuwe sponsor, we zijn in gesprek met Wispr Flow en proberen ook Google te betrekken. Binnenkort verschijnt er een interview over de actie in Quote.',
-      'Minstens zo belangrijk was wat ik leerde over ondernemen zélf. We zijn Back to Being gestart door simpelweg te doen alsof alles al geregeld was — en juist daardoor kwamen de sponsoren binnen en wordt het nu echt waargemaakt. Samen met mijn team leerde ik hoe je met klanten en stakeholders praat: de juiste vragen stellen om te achterhalen wat iemand écht wil, de gunfactor opbouwen, en spiegelen — de energie die iemand naar je toe brengt mimieken, zodat diegene zich op zijn gemak voelt. Enthousiast én professioneel tegelijk zijn in zulke gesprekken bleek een vaardigheid die je kunt leren.',
+      'Een evenement van deze schaal organiseren leer je niet uit een boek: partijen aan elkaar knopen, strak plannen en op het moment zelf schakelen als er iets misgaat. Met 500+ builders in één ruimte moet alles kloppen — en juist door het te dóen zag ik hoe ik onder druk leer, samenwerk en verantwoordelijkheid neem voor iets dat groter is dan ikzelf.',
+      'De Megathon haalde zelfs Quote (zie het bewijs hieronder) — een bevestiging van de schaal en het effect. Minstens zo waardevol waren de connecties die ik er opdeed: mijn netwerk groeide hier sneller dan via welke les dan ook.',
+      'In diezelfde periode mochten we Kaires pitchen bij Google (zie de video). Ook zo’n moment ontstaat niet vanzelf — het komt voort uit zichtbaar zijn, meebouwen en de juiste mensen ontmoeten.',
     ],
     reflectie: [
-      'Back to Being verandert nu al hóe ik leer. Ik merk dat ik het snelst leer in het diepe: door met een team echt te bouwen onder ongemakkelijke omstandigheden, in plaats van eerst alles veilig uit te denken. Straks op de Camino — lopend, met beperkte tijd en bereik — zal ik keuzes moeten maken en vertrouwen op reflectie-onderweg in plaats van op zekerheid vooraf.',
-      'Een inzicht dat me bijbleef, kreeg ik van mijn mediaprofessional: iedereen doet eigenlijk maar wat — ook de mensen van wie je denkt dat ze alles weten, gaan gewoon verder met wat ze doen. Dat gaf me de durf om te beginnen zonder dat alles vooraf vastligt, en om te geloven dat je veel meer waar kunt maken dan je denkt, zolang je er zelf in gelooft.',
-      'Tegelijk zit hier een ethische spanning die me scherp houdt: we zetten maximale slimme technologie in (smartglasses, Starlink, AI-agents) om juist een app te bouwen die jongeren helpt om uit hun hoofd te komen en even mínder met techniek bezig te zijn. Dat dwingt me na te denken over de ethische impact van AI op kwetsbare jongeren — hoe voorkom je dat een tool die rust belooft zelf weer een bron van druk of afhankelijkheid wordt?',
-      'Juist die paradox — terug naar “being” met de nieuwste technologie in de hand — maakt Back to Being zo waardevol voor mijn lerend vermogen: het combineert leren door te doen met kritisch nadenken over wat die technologie met mensen doet.',
+      'Ik leer het scherpst als ik verantwoordelijkheid pak voor iets zonder handleiding. Bij de Megathon moest ik schakelen, op mijn team vertrouwen en achteraf benoemen wat misging en wat ik eruit haalde — precies het soort reflectie dat LV 1.3 van mij vraagt.',
+      'Netwerk is voor mij geen visitekaartjes verzamelen, maar mensen echt leren kennen door samen iets te maken. Dat zichtbaar meebouwen kansen oplevert — tot een pitch bij Google aan toe — heb ik dit blok aan den lijve ondervonden.',
     ],
-    quote: 'We gebruikten alle techniek die er is, om jongeren te helpen er juist even zónder te kunnen.',
-    bewijs: [{ label: 'Back to Being (backtobeing.tech)', href: 'https://backtobeing.tech' }],
+    quote: 'Je netwerk bouw je niet op met visitekaartjes, maar door samen iets te maken.',
+    video: {
+      src: '/bewijs/kaires-google-pitch.mp4',
+      label: 'Wij pitchen Kaires (AI-muziek voor retail) bij Google',
+    },
+    bewijs: [
+      { label: 'De Megathon in Quote', image: '/bewijs/megathon-quote.jpeg' },
+      { label: 'Megathon — de grootste hackathon van Europa (megathon.xyz)', href: 'https://megathon.xyz' },
+      { label: 'Kaires — kaires.nl', href: 'https://kaires.nl' },
+    ],
     vervolgstap:
-      'De ethische lat hooghouden: een AI die mentale rust belooft, mag voor kwetsbare jongeren nooit nieuwe druk of afhankelijkheid creëren.',
+      'Blijven meebouwen aan events en community: zichtbaar zijn, mensen ontmoeten en de kansen die daaruit ontstaan benutten.',
   },
 
   // --------------------------------------------------------------------------
@@ -123,12 +128,12 @@ export const APPS: AppItem[] = [
     intro:
       'Ethiek is voor mij geen los hoofdstuk, maar een rode draad door alles wat ik bouw: AI-muziek bij Kaires, een app voor kwetsbare jongeren bij Back to Being, en hoe we mensen meten in de winkel. LV 4.3 vraagt me die afwegingen expliciet te maken.',
     detail: [
-      'AI-muziek (Kaires): juridisch is uitgezocht dat we Buma/Sena omzeilen omdat we geen bestaande rechten gebruiken. Maar de ethische vraag blijft staan: wat betekent generatieve AI-muziek voor artiesten, en hoe transparant zijn we richting retailer en eindklant? Ik wil daar een gefundeerd standpunt over, geen marketingverhaal.',
+      'AI-muziek (Kaires): ik wilde zwart-op-wit weten of het legaal is om AI-gegenereerde muziek in winkels af te spelen. Daarom heb ik juridisch advies opgevraagd bij Het Juridisch Spreekuur (HvA) én het laten dubbelchecken door een advocaat van Simmons & Simmons. Beiden bevestigen: bij volledig AI-gegenereerde, instrumentale muziek ontstaan er geen verplichtingen richting Buma/Stemra of Sena — er is simpelweg geen menselijke rechthebbende. Maar daarmee is de ethische vraag níet beantwoord: wat betekent generatieve AI-muziek voor artiesten, en hoe transparant zijn we richting retailer en eindklant? Ik wil daar een gefundeerd standpunt over, geen marketingverhaal.',
       'Kwetsbare jongeren (Back to Being): we bouwen een AI-app die rust belooft tegen prestatiedruk en faalangst. Juist dán moet je ethisch scherp zijn — een tool die rust belooft mag zelf nooit een nieuwe bron van druk of afhankelijkheid worden.',
       'Privacy in de winkel (RAAIT-keynote): om bezoekers te tellen gebruiken we hitte-sensoren in plaats van camera’s, zoals veel anderen wél doen. Je ziet alleen een 0 of een 1 — er is wel of geen persoon — maar die persoon is niet te identificeren. Meten zonder mensen herkenbaar vast te leggen: privacy by design.',
     ],
     kernpunten: [
-      'AI-muziek (Kaires): eerlijk en transparant naar artiesten — geen marketingverhaal.',
+      'AI-muziek (Kaires): juridisch bevestigd (advies Juridisch Spreekuur + Simmons & Simmons) — maar juridisch mag ≠ ethisch klopt.',
       'Kwetsbare jongeren (Back to Being): rust beloven mag nooit nieuwe druk worden.',
       'Privacy in de winkel: tellen met hitte-sensoren, niet met camera’s — niet te identificeren.',
     ],
@@ -138,6 +143,11 @@ export const APPS: AppItem[] = [
     ],
     quote: 'Dat iets juridisch mag, betekent niet dat het ethisch klopt.',
     bewijs: [
+      {
+        label:
+          'Juridisch advies: AI-muziek in winkels zonder Buma/Stemra- of Sena-plicht (Het Juridisch Spreekuur, HvA)',
+        href: '/bewijs/adviesbrief-ai-muziek-juridisch-spreekuur.pdf',
+      },
       {
         label: 'Anonieme hitte-sensor: telt mensen als 0 of 1, zonder ze te identificeren',
         image: '/bewijs/anonieme-hittesensor.png',
@@ -179,6 +189,36 @@ export const APPS: AppItem[] = [
     bewijs: [],
     vervolgstap:
       'De feedback uit dit gesprek meenemen als spiegel op mijn professionele en ethische gedrag — en blijven vragen om peer review, ook na het blok.',
+  },
+
+  // --------------------------------------------------------------------------
+  // Back to Being staat bewust achteraan: dit is mijn toekomstperspectief —
+  // de venture waarmee ik ná het afstuderen verderga. (Wispr Flow nog in gesprek.)
+  {
+    id: 'being',
+    fileName: 'BackToBeing.app',
+    title: 'Back to Being — kantoor in een rugzak',
+    teaser: 'Mijn vervolg ná het afstuderen',
+    icon: 'being',
+    criteria: ['reflectie', 'leerproces', 'ethiek'],
+    intro:
+      'Waar mijn leerproces naartoe leidt. Back to Being (backtobeing.tech) is de venture die ik met z’n drieën bouw: een AI-gestuurde app voor mentale gezondheid voor Stichting MIND. Dit is mijn toekomstperspectief — waar ik ná mijn afstuderen mee verderga en waarin alles samenkomt wat ik dit blok heb geleerd.',
+    detail: [
+      'Het probleem dat we aanpakken: jongeren ervaren veel prestatiedruk, faalangst en FOMO. Mind Young had daar een e-maillijst voor — vijf weken lang wekelijks opdrachten om even uit je hoofd te stappen en in het moment te komen — maar dat resoneert nauwelijks bij jongeren; ze schrijven zich er simpelweg niet voor in.',
+      'Onze oplossing is een AI-gestuurde app die diezelfde opdrachten interactief maakt: quotes, opdrachten die je op het platform uitvoert en boeksuggesties. Dat sluit veel beter aan bij de doelgroep dan een e-mailblast.',
+      'De manier waaróp we het bouwen is zelf een leerexperiment. Van 24 tot en met 31 augustus 2026 lopen we met z’n drieën de Camino: we vliegen naar Porto, reizen door naar Tui en lopen vandaar zo’n 120 km naar Santiago de Compostela — terwijl we onderweg de app bouwen. Ons kantoor zit dan letterlijk in onze rugzak: laptops mee, smartglasses om onze schermen te zien, Starlink voor bereik en AI-agents die we via onze AirPods aanspreken. Techleap is aangehaakt, remote is onze nieuwe sponsor en we zijn in gesprek met Wispr Flow.',
+      'Minstens zo belangrijk was wat ik leerde over ondernemen zélf. We zijn Back to Being gestart door simpelweg te doen alsof alles al geregeld was — en juist daardoor kwamen de sponsoren binnen en wordt het nu echt waargemaakt. Samen met mijn team leerde ik hoe je met klanten en stakeholders praat: de juiste vragen stellen om te achterhalen wat iemand écht wil, de gunfactor opbouwen, en spiegelen — de energie die iemand naar je toe brengt mimieken, zodat diegene zich op zijn gemak voelt. Enthousiast én professioneel tegelijk zijn in zulke gesprekken bleek een vaardigheid die je kunt leren.',
+    ],
+    reflectie: [
+      'Back to Being verandert nu al hóe ik leer. Ik merk dat ik het snelst leer in het diepe: door met een team echt te bouwen onder ongemakkelijke omstandigheden, in plaats van eerst alles veilig uit te denken. Straks op de Camino — lopend, met beperkte tijd en bereik — zal ik keuzes moeten maken en vertrouwen op reflectie-onderweg in plaats van op zekerheid vooraf.',
+      'Een inzicht dat me bijbleef, kreeg ik van mijn mediaprofessional: iedereen doet eigenlijk maar wat — ook de mensen van wie je denkt dat ze alles weten, gaan gewoon verder met wat ze doen. Dat gaf me de durf om te beginnen zonder dat alles vooraf vastligt, en om te geloven dat je veel meer waar kunt maken dan je denkt, zolang je er zelf in gelooft.',
+      'Tegelijk zit hier een ethische spanning die me scherp houdt: we zetten maximale slimme technologie in (smartglasses, Starlink, AI-agents) om juist een app te bouwen die jongeren helpt om uit hun hoofd te komen en even mínder met techniek bezig te zijn. Dat dwingt me na te denken over de ethische impact van AI op kwetsbare jongeren — hoe voorkom je dat een tool die rust belooft zelf weer een bron van druk of afhankelijkheid wordt?',
+      'Juist die paradox — terug naar “being” met de nieuwste technologie in de hand — maakt Back to Being zo waardevol voor mijn lerend vermogen: het combineert leren door te doen met kritisch nadenken over wat die technologie met mensen doet.',
+    ],
+    quote: 'We gebruikten alle techniek die er is, om jongeren te helpen er juist even zónder te kunnen.',
+    bewijs: [{ label: 'Back to Being (backtobeing.tech)', href: 'https://backtobeing.tech' }],
+    vervolgstap:
+      'De ethische lat hooghouden: een AI die mentale rust belooft, mag voor kwetsbare jongeren nooit nieuwe druk of afhankelijkheid creëren.',
   },
 
   // --------------------------------------------------------------------------
